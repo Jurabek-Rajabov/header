@@ -1,0 +1,84 @@
+*::after, *::before, *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.container{
+    width: 1300px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+header{
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 10px;
+    animation-name: header_animation;
+    transition: 5s ease all;
+    position: fixed;
+    /* background: black; */
+    animation-duration: 5s;
+    background: black;
+}
+
+nav{
+    width: 100%;
+    height: auto;
+}
+
+.nav__logo{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.nav__logo ul{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    list-style: none;
+}
+
+.nav__logo ul li a{
+    border-bottom: 1px solid white;
+    transition: 0.2s ease;
+}
+
+.nav__logo ul li a:hover{
+    border-bottom: 1px solid white;
+    color: grey;
+    transition: 0.2s ease;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.btn{
+    background: crimson;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    transition: 1s ease all;
+
+}
+
+.btn:hover{
+    background: rgba(220, 20, 60, 0.726);
+    transition: 1s ease all;
+}
+
+@keyframes header_animation {
+    0%{
+        transform: translateY(-180px);
+        transition: 5s ease all;
+    }
+}
